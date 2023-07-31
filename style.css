@@ -26,16 +26,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px;
-    height: 280px;
+    width: 230px;
+    height: 250px;
+    padding: 10px;
     border-radius: 10px;
-    padding-right: 15px;
 }
 
 .text-input {
     border: none;
     background-color: hsl(189, 41%, 97%);
-    width: 100%;
+    width: 220px;
+    padding-right: 10px;
     height: 35px;
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -50,12 +51,10 @@
 
 .dollar {
     background-image: url(images/icon-dollar.svg);
-    padding-right: 10px;
 }
 
 .person {
     background-image: url(images/icon-person.svg);
-    padding-right: 10px;
 }
 
 input::placeholder {
@@ -96,6 +95,7 @@ input:focus {
 }
 
 .tip-input {
+    width: 100%;
     text-align: center;
 }
 
@@ -108,12 +108,12 @@ input:focus {
     background-color: hsl(183, 100%, 15%);
     width: 220px;
     height: 240px;
+    padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     row-gap: 1rem;
-    padding: 20px;
 }
 
 .title {
