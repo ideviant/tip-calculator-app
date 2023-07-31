@@ -97,6 +97,7 @@ input:focus {
 .tip-input {
     width: 100%;
     text-align: center;
+    padding-right: 0;
 }
 
 .tip-input::placeholder {
