@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="left">
+        <div class="bill-box">
+          <div class="title">Bill</div>
+          <div class="large-input" id="required">
+            <input class="text-input dollar" type="text" placeholder="0" required
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0')">
+          </div>
+        </div>
+        <div class="select-tip-box">
+          <div class="title">Select Tip %</div>
+          <div class="small-input-box">
+            <div class="small-input" id="required">5%</div>
+            <div class=" small-input" id="required">10%</div>
+            <div class="small-input" id="required">15%</div>
+            <div class=" small-input" id="required">25%</div>
+            <div class="small-input" id="required">50%</div>
+            <div class=" small-input custom">
+              <input class="text-input  tip-input" id="required" type="text" placeholder="Custom" required
+                oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0')">
+            </div>
+          </div>
+        </div>
+        <div class="number-box">
+          <div class="title">Number of People</div>
+          <div class="large-input">
+            <input class="text-input person" id="required" type="text" placeholder="0" required
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0')"">
+          </div>
+        </div>
+      </div>
+      <div class=" right">
+            <div class="tip-box">
+              <div class="tip-title">Tip Amount <br><span style="color:hsl(184, 14%, 56%)">/ person</span></div>
+              <div class="tip-value" id="tipAmountPerPerson">$0.00</div>
+            </div>
+            <div class="tip-box">
+              <div class="tip-title">Total <br><span style="color:hsl(184, 14%, 56%)">/ person</span></div>
+              <div class="tip-value" id="totalAmountPerPerson">$0.00</div>
+            </div>
+            <button class="reset" disabled>RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

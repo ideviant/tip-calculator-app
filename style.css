@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+}
+
+.main {
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 600px;
+    height: 320px;
+    border-radius: 15px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 280px;
+    border-radius: 10px;
+    padding-right: 15px;
+}
+
+.text-input {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 15px;
+    background-position-x: 10px;
+    color: hsl(184, 14%, 56%);
+    font-weight: bolder;
+    text-align: right;
+    font-size: 15px;
+}
+
+.dollar {
+    background-image: url(images/icon-dollar.svg);
+    padding-right: 10px;
+}
+
+.person {
+    background-image: url(images/icon-person.svg);
+    padding-right: 10px;
+}
+
+input::placeholder {
+    color: hsl(184, 14%, 56%);
+    text-align: right;
+}
+
+input:focus {
+    outline: none !important;
+    border: solid;
+    border-color: hsl(172, 67%, 45%);
+    text-align: right;
+}
+
+.small-input-box {
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.small-input {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-input {
+    text-align: center;
+}
+
+.tip-input::placeholder {
+    text-align: center;
+    padding-right: 0px;
+}
+
+.right {
+    background-color: hsl(183, 100%, 15%);
+    width: 220px;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    padding: 20px;
+}
+
+.title {
+    color: hsl(183, 100%, 15%);
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+.tip-box {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-title {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.tip-value {
+    color: hsl(172, 67%, 45%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.reset:disabled,
+.reset[disabled] {
+    background-color: hsl(186, 14%, 43%);
+}
+
+.reset {
+    position: relative;
+    top: 80px;
+    border: 0;
+    height: 2rem;
+    border-radius: 0.2rem;
+    background-color: hsl(172, 67%, 45%);
+    font-weight: bold;
+}
