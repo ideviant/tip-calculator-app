@@ -79,6 +79,10 @@ $(".reset").on("click", function () {
         "background-color": "hsl(183, 100%, 15%)",
         color: "white",
     });
+    $(".custom").css({
+        "background-color": "hsl(189, 41%, 97%)",
+        color: "hsl(184, 14%, 56%)",
+    });
     $(".tip-input").val("Custom");
 
     numberOfPeople = 0;
